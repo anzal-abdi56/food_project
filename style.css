@@ -1,0 +1,61 @@
+th img{
+    height: 150px;
+    width: 150px;
+}
+.card{
+    align-items: center;
+    justify-content: center;
+}
+.card img{
+    height: 300px;
+    width: 400px;
+}
+.card body{
+    background-color: #fff;
+    width: 350px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+#postForm{
+    background-color: bisque;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+label{
+    font-weight: bolder;
+    background-color: #ffff;
+} 
+  /* Styling for the form */
+  .container {
+    max-width: 500px; 
+    margin-top: 20px; 
+    padding: 20px; 
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+  }
+  
+  .form-label {
+    font-weight: bold; 
+  }
+  
+  .form-control {
+    margin-bottom: 15px;
+  }
+  
+  thead{
+    font-size: larger;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: blue;
+    color: azure;
+  }
+  tbody{
+    background-color: bisque;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+  }
+ #updateForm{
+    font-size: large;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+ } 
+  

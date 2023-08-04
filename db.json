@@ -1,0 +1,64 @@
+{
+  "donations": [
+    {
+      "id": 1,
+      "name": "Food Banking Kenya",
+      "image": "https://images.pexels.com/photos/6646918/pexels-photo-6646918.jpeg?auto=compress&cs=tinysrgb&w=1600",
+      "mission": "Reducing food wastage, alleviate hunger, enhance the sustainability of the vulnerable through sourcing and distribution of food to enhance self-sustaining income-generating activities."
+    },
+    {
+      "id": 2,
+      "name": "World Food Programme",
+      "image": "https://images.pexels.com/photos/6995301/pexels-photo-6995301.jpeg?auto=compress&cs=tinysrgb&w=1600",
+      "mission": "End hunger, approve food security and nutrition by 2030."
+    },
+    {
+      "id": 3,
+      "name": "Feeding Kenya",
+      "image": "https://images.pexels.com/photos/6647016/pexels-photo-6647016.jpeg?auto=compress&cs=tinysrgb&w=1600",
+      "mission": "End Hunger in Kenya especially in the North-Eastern part of the country."
+    },
+    {
+      "id": 4,
+      "name": "Non-Profit Organization",
+      "image": "https://images.pexels.com/photos/7345483/pexels-photo-7345483.jpeg?auto=compress&cs=tinysrgb&w=1600",
+      "mission": "Advocate for policies that create long-term solutions to hunger."
+    },
+    {
+      "id": 5,
+      "name": "World Hunger Relief Farm",
+      "image": "https://images.pexels.com/photos/6994940/pexels-photo-6994940.jpeg?auto=compress&cs=tinysrgb&w=1600",
+      "mission": "Alleviate hunger through education, research, and sustainable agriculture."
+    },
+    {
+      "id": 6,
+      "name": "Rise Against Hunger",
+      "image": "https://images.pexels.com/photos/6590915/pexels-photo-6590915.jpeg?auto=compress&cs=tinysrgb&w=1600",
+      "mission": "End hunger by empowering communities, nourishing lives and responding to emergencies."
+    },
+    {
+      "id": 7,
+      "name": "Welt Hunger Hilfe",
+      "image": "https://images.pexels.com/photos/9090942/pexels-photo-9090942.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load",
+      "mission": "Create a world in which all people have the opportunity to live a self-determined life in dignity and justice, free from hunger and poverty."
+    },
+    {
+      "id": 8,
+      "name": "Hunger Task Force",
+      "image": "https://images.pexels.com/photos/6646865/pexels-photo-6646865.jpeg?auto=compress&cs=tinysrgb&w=1600",
+      "mission": "Hunger Task Force believes that every person has a right to healthy food obtained with dignity. We work to prevent hunger and malnutrition by providing food to people in need today and by promoting social policies to achieve a hunger free community tomorrow."
+    },
+    {
+      "name": "",
+      "image": "",
+      "mission": "",
+      "id": 9
+    },
+    {
+      "name": "",
+      "image": "",
+      "mission": "",
+      "id": 10
+    }
+  ]
+}
