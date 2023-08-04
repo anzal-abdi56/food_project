@@ -19,8 +19,8 @@ Backend: Node.js
 # Getting Started
 To run the Food Project - Charities for a Cause on your local machine, follow these steps:
 
-1. Clone the repository: git clone https://github.com/your-username/food-project.git
-Install dependencies: cd food-project
+1. Clone the repository: git clone https://github.com/anzal-abdi56/food_project.git
+Install dependencies: cd food_project
 2. Set up the environment variables: Create a .env file in the root directory and configure the following variables:
 3. PORT: Port number for the server (default: 3000)
 Access the application in your web browser at http://localhost:3000
