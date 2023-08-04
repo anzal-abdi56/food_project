@@ -28,7 +28,7 @@
         </div>
       </nav>
       <div class="container">
-        <form id="postForm">
+        <form id="postForm" onsubmit="postOrganization()">
             <div class="mb-3">
                 <label for="" class="form-label">Name</label>
                 <input type="name" class="form-control" id="name" placeholder="Enter organization's name">
@@ -41,7 +41,7 @@
                 <label for="" class="form-label">Mission</label>
                 <input type="text" class="form-control" id="mission" placeholder="Enter organization's mission">
               </div>
-              <button type="submit" class="btn btn-primary" id="postButton">Submit</button>
+              <button type="submit" class="btn btn-primary" id="postButton" onclick="postOrganization()">Submit</button>
         </form>
       </div>
      

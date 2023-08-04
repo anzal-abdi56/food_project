@@ -1,20 +1,15 @@
 //function for posting
-let button = document.getElementById("postButton")
-
-function postOrganizations(){
-    let form = document.getElementById("postForm")
-    form.addEventListener("submit",(e)=>{
-       e.preventDefault()
-       postOrganizations()
-})
+function postOrganization(){
+   const form = document.getElementById("postForm") 
+   const name = document.getElementById("name").value
+   const image = document.getElementById("image").value
+   const mission = document.getElementById("mission").value
 
 
-    let name = document.getElementById("name").value
-    let image = document.getElementById("image").value
-    let mission = document.getElementById("mission").value
+   form.addEventListener("submit",(e)=>{
+    e.preventDefault()
 
-
-    fetch(" http://localhost:3000/donations",{
+    fetch("http://localhost:3000/donations",{
         method:"POST",
         headers:{"Content-Type":"application/json"},
         body:JSON.stringify({
@@ -26,9 +21,11 @@ function postOrganizations(){
     .then(res=>res.json())
     .then(data=>{
         console.log(data)
-        alert("Organization has been added")
+        alert("Organization has been added.")
     })
     .catch(error=>console.log(error))
+   })
+
 }
 
 
@@ -79,13 +76,11 @@ function displayOrganizations(organizations){
         const updateButton = document.getElementById("updateButton")
         updateButton.addEventListener("click", ()=>updateOrganization(id))
 
-         //Delete button
-         const deleteButton = document.getElementById("deleteButton")
-         deleteButton.addEventListener("click",()=>deleteOrganization(id))
-
         })
        
-       
+       /*Delete button*/
+       const deleteButton = document.getElementById(`delete_${organization.id}`)
+       deleteButton.addEventListener("click",()=>deleteOrganization(id))
     })
 }
 getOrganizations()
@@ -121,7 +116,7 @@ function getOneOrganization(id){
    
 }
 //hide update form
-const updateForm = document.getElementById("updForm")
+const updateForm = document.getElementById("updateForm")
 updateForm.style.display="none"
 
 function updateOrganization(id){
@@ -143,11 +138,14 @@ function updateOrganization(id){
         .then(res=>res.json())
         .then(data=>console.log(data))
 }
+
 function deleteOrganization(id){
     fetch(`http://localhost:3000/donations/${id}`,{
         method:"DELETE"
     })
-    .then(response=>response.json())
+    .then(response=>response.json)
     .then(data=>console.log(data))
+    .catch(error=>console.log(error))
 }
+
 
