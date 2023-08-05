@@ -15,7 +15,7 @@ This makes it easier for users to find organizations aligned with their interest
 
 # Technologies Used
 Frontend: HTML, CSS, JavaScript
-Backend: Node.js
+Backend:ssh key:git@github.com:anzal-abdi56/backendserver.git
 # Getting Started
 To run the Food Project - Charities for a Cause on your local machine, follow these steps:
 
