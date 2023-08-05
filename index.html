@@ -8,25 +8,45 @@
     <title>Abdinoor's Project</title>
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="container-fluid">
-          <a class="navbar-brand" href="/index.html">Charity Organizations</a>
+          <a class="navbar-brand" href="#">Charity Organizations</a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0 ml-auto">
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="./form.html">Add Organization</a>
+                <a class="nav-link active" aria-current="page" href="#"></a>
              
             </ul>
-            <form class="d-flex">
-              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-              <button class="btn btn-outline-success" type="submit">Search</button>
+            <form class="d-flex" id="searchForm">
+              <input class="form-control me-2" type="search" id="organization" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit" id="searchButton">Search</button>
             </form>
           </div>
         </div>
       </nav>
+      <div id="resultsContainer">
+
+      </div>
+      <div class="container">
+        <form id="postForm" onsubmit="postOrganization()">
+            <div class="mb-3">
+                <label for="" class="form-label">Name</label>
+                <input type="name" class="form-control" id="name" placeholder="Enter organization's name">
+              </div>
+              <div class="mb-3">
+                <label for="" class="form-label">Image</label>
+                <input type="url" class="form-control" id="image" placeholder="Enter image url">
+              </div>
+              <div class="mb-3">
+                <label for="" class="form-label">Mission</label>
+                <input type="text" class="form-control" id="mission" placeholder="Enter organization's mission">
+              </div>
+              <button type="submit" class="btn btn-primary" id="postButton" onclick="postOrganization()">Submit</button>
+        </form>
+      </div>
     <div class="container" id="organizationsContainer">
         <table class="table table-striped">
             <thead>

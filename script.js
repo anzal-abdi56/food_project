@@ -28,7 +28,6 @@ function postOrganization(){
 
 }
 
-
 // function to get
 function getOrganizations(){
     fetch("http://localhost:3000/donations")
@@ -144,8 +143,26 @@ function deleteOrganization(id){
         method:"DELETE"
     })
     .then(response=>response.json)
-    .then(data=>console.log(data))
+    .then(data=>{
+        console.log(data)
+        alert("Organization has been deleted")
+    })
+        
     .catch(error=>console.log(error))
 }
+function searchOrganization(){
+    const form = document.getElementById("searchForm")
+    const input = document.getElementById("organization").value
+
+    form.addEventListener("submit",(e)=>{
+        e.preventDefault()
+
+        fetch(`http://localhost:3000/donations?organization=${input}`)
+        .then(res=>res.json())
+        .then(data=>console.log(data))
+    })
+}
+const searchButton = document.getElementById("searchButton")
+searchButton.addEventListener("click", searchOrganization)
 
 
