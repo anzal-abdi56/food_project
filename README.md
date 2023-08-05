@@ -14,8 +14,8 @@ The Food Project - Charities for a Cause is a web application that aims to conne
 This makes it easier for users to find organizations aligned with their interests.
 
 # Technologies Used
-1.Frontend: HTML, CSS, JavaScript
-2.Backend:ssh key:git@github.com:anzal-abdi56/backendserver.git
+1. Frontend: HTML, CSS, JavaScript
+2. Backend:ssh key:git@github.com:anzal-abdi56/backendserver.git
 # Getting Started
 To run the Food Project - Charities for a Cause on your local machine, follow these steps:
 
